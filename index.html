@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F¹ • Lab | 從付二代到富一代的啟程</title>
-    <!-- 引入 Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 引入 Google Fonts - Inter 字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- 引入 Font Awesome 實心圖標，用於社群媒體圖標 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
             /* 根據您的圖片風格，設定深綠色漸層背景 */
             background: linear-gradient(to bottom, #0c4d44, #001f1c);
         }
+        h1 {
+        line-height: 2; /* 您可以將此數值改為您想要的行高 */
+    }
     </style>
 </head>
 <body class="text-white">
 
-    <!-- 頁面頂部導航欄 -->
     <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- 品牌 Logo/名稱 -->
             <div class="flex items-center space-x-2">
                 <img src="https://i.meee.com.tw/vQra30i.jpeg" alt="F¹ • Lab 品牌Logo" class="h-12 w-12 object-cover rounded-full">
                 <span class="text-xl font-bold text-gray-900">F¹ • Lab (富一代實驗室)</span>
@@ -35,31 +34,63 @@
 
     <main class="container mx-auto p-4 sm:p-8">
 
-        <!-- 首屏：英雄區塊 -->
         <section class="flex flex-col lg:flex-row items-center lg:space-x-8 mb-16 pt-12">
             <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-                    「家族的<span class="text-yellow-600">貧窮</span>到我為止<br>家族的<span class="text-orange-500">富貴</span>從我開始」！
-                </h1>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 flex flex-col gap-y-2">
+    <span>
+        「家族的<span class="text-yellow-600">匱乏</span>到我為止
+    </span>
+    <span class="pl-14">
+           家族的<span class="text-orange-500">富庶</span>從我開始」！
+    </span>
+</h1>
+
                 <p class="text-lg sm:text-xl text-gray-300 mb-6">
                     F¹ • Lab帶你迎頭超越富二代的車尾燈
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-                    <a href="#cta" class="bg-red-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105 text-lg">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6S5psiWvkGH9j-6IePXedVus-GEYBGKbDVK3QSsSmfEcwIg/viewform?usp=pp_url&entry.220436005=F1" class="bg-red-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105 text-lg">
                         立即報名講座 / 諮詢
                     </a>
                 </div>
             </div>
-            <div class="lg:w-1/2">
-                <img src="https://i.meee.com.tw/GlCWlNq.png" alt="創辦人與父母的溫馨照片" class="rounded-3xl shadow-xl w-full h-auto">
+            <div class="lg:w-1/2 relative flex flex-col items-center">
+                <!-- ...existing code... -->
+<div id="hero-carousel" class="overflow-hidden rounded-3xl shadow-xl w-full max-w-[1000px] aspect-square">
+    <div class="flex transition-transform duration-500" id="carousel-inner" style="transform: translateX(0);">
+        <img src="https://i.postimg.cc/zDPxB2DN/25-2.png" alt="品牌介紹1" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/vZr66Dyy/F1-2.png" alt="品牌介紹2" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/52dC0LZp/F1-3.png" alt="品牌介紹3" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/mrT13RZH/F1-4.png" alt="品牌介紹4" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/nzzs5kDV/F1-5.png" alt="品牌介紹5" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/qBGJnnhj/F1-6.png" alt="品牌介紹6" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/288zx6nm/F1-7.png" alt="品牌介紹7" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/tCS9vjz6/F1-8.png" alt="品牌介紹8" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/bJBGjtxx/F1-6.png" alt="品牌介紹9" class="h-full object-cover flex-shrink-0">
+        <img src="https://i.postimg.cc/7hJ5PZ9p/F1-7.png" alt="品牌介紹10" class="h-full object-cover flex-shrink-0">
+    </div>
+</div>
+<!-- ...existing code... -->
+                <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow transition" style="z-index:2;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow transition" style="z-index:2;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="flex justify-center mt-4 space-x-2 w-full max-w-[840px]" id="carousel-dots">
+                    </div>
             </div>
         </section>
 
-        <!-- 痛點共鳴區塊 -->
         <section class="bg-white rounded-3xl shadow-lg p-6 sm:p-10 mb-16">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">
-                    你的家庭，是否也曾有過這樣的遺憾？
+                    <span>
+        你好！我是Ryan
+    </span>
+    <span class="pl-10">
+          F¹ • Lab的創辦人
+    </span>
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-700">
                     <div>
@@ -75,42 +106,38 @@
                     </div>
                     <div>
                         <p class="mb-4">
-                            這些不是虛構的故事，這是我創辦 F¹ • Lab 最真實的起源。
+                            這些不是虛構的故事，這是我創辦 F¹ • Lab <br>最真實的起源。
                         </p>
                         <p class="mb-4">
-                            我曾是一個「付二代」，渴望改變，卻與父母的觀念產生巨大衝突。我明白，在傳統的「權威與忠孝」概念下，再多的專業，也難以跨越長輩「不信任子女」的心理鴻溝。
+                            我曾是一個「付二代」，渴望改變，卻與父母的觀念產生巨大衝突。我明白，在傳統的「權威與忠孝」概念下，再多的專業，也難以跨越長輩「不信任子女」<br>的心理鴻溝。
                         </p>
                         <p class="font-semibold text-red-600 text-center">
-                            這些遺憾，正是我們存在的理由。
+                            然而，這些遺憾，正是我們存在的理由。
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 解決方案與獨特價值區塊 -->
         <section class="text-center mb-16">
             <h2 class="text-2xl sm:text-3xl font-bold text-white mb-10">
                 為什麼 F¹ • Lab 能夠幫助你？
             </h2>
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- 世代合作 -->
                 <div class="bg-red-100 p-6 rounded-3xl shadow-md">
-                    <h3 class="font-bold text-xl sm:text-2xl text-red-700 mb-2">世代合作</h3>
+                    <h3 class="font-bold text-xl sm:text-2xl text-red-700 mb-2">Step1.重整家族凝聚力</h3>
                     <p class="text-gray-700">
                         我們將「跟家裡借力」轉化為「分工合作」。教你用智慧與溝通，彌補過往遺憾，將父母的經驗與你的熱情結合，共同為家族努力。
                     </p>
                 </div>
-                <!-- 守護 -->
                 <div class="bg-yellow-100 p-6 rounded-3xl shadow-md">
-                    <h3 class="font-bold text-xl sm:text-2xl text-yellow-700 mb-2">守護</h3>
+                    <h3 class="font-bold text-xl sm:text-2xl text-yellow-700 mb-2">Step2.為優化家族財務<br>挺身而出</h3>
                     <p class="text-gray-700">
                         我們培養你成為家庭的「守護者」。學習如何識別金融陷阱，避免父母重蹈投資失利的覆轍，用你的專業為家族財產築起防護網。
                     </p>
                 </div>
-                <!-- 無形資產 -->
                 <div class="bg-gray-200 p-6 rounded-3xl shadow-md">
-                    <h3 class="font-bold text-xl sm:text-2xl text-gray-700 mb-2">無形資產</h3>
+                    <h3 class="font-bold text-xl sm:text-2xl text-emerald-700 mb-2">Step3.建立永續無形資產</h3>
                     <p class="text-gray-700">
                         我們傳承的，不只是有形財富，更是能讓家族智慧代代相傳的「無形財商資產」。這才是讓家族富裕永續的最珍貴禮物。
                     </p>
@@ -118,7 +145,6 @@
             </div>
         </section>
 
-        <!-- 權威背書區塊 -->
         <section class="bg-white rounded-3xl shadow-lg p-6 sm:p-10 mb-16 text-center">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
@@ -126,88 +152,146 @@
                 </h2>
                 <div class="flex flex-col lg:flex-row items-center lg:space-x-8">
                     <div class="lg:w-1/2 mb-6 lg:mb-0">
-                        <img src="https://i.meee.com.tw/PAXNX2V.jpeg" alt="導師照片" class="rounded-full shadow-lg mx-auto w-48 h-48 lg:w-full lg:h-full object-cover">
+                        <img src="https://i.meee.com.tw/gsxpNF3.jpeg" alt="導師照片" class="rounded-full shadow-lg mx-auto w-48 h-48 lg:w-full lg:h-full object-cover">
                     </div>
                     <div class="lg:w-1/2 text-left text-lg text-gray-700">
-                        <p class="mb-4">
-                            我們的核心課程與理念，源自於一位擁有超過30年、上百億財務與企業操作經驗的產業巨擘。
-                        </p>
                         <p class="mb-4 font-semibold">
-                            他不僅是營造業的三代傳承者，更是輔導中小企業上市櫃的企管顧問，一位真正的「OM老錢」。
+                            在 F¹ • Lab，我們的靈魂導師——『房教授』，<br>是一位橫跨多個領域，並在資本市場中擁有深厚經驗的領航者。他，才是真正的『ＯＭ老錢』
+                        </p>
+                        <p class="mb-4">
+                            他不僅是代銷、仲介與建商的實戰導師，更是協助眾多中小企業成功上市櫃的推手，並透過精準的眼光與資本運作，完成多筆公司收購案。他『左手房地產，右手金融』的獨有視野，不只解決家族三代的財務難題，更將這套複合式智慧，轉化為 F¹ • Lab 的核心課程。
                         </p>
                         <p>
-                            這套智慧幫助我，從「付二代」變成能夠為家族存下300萬的實踐者。更重要的是，它也幫助我的夥伴，為他的家族創造了高達1000萬的資產。
+                            這份來自企業家導師的智慧，能幫助你從個人財富管理，一路延伸至企業經營的宏觀視野，為你和你的家族，創造更廣闊的財富未來。
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+   <section class="bg-emerald-750 rounded-3xl shadow-lg p-6 sm:p-10 mb-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+                    
+                </h2>
+                <div class="relative w-full max-w-[840px] mx-auto overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="showcase-carousel-inner">
+                        <img src="https://i.postimg.cc/t70YsGm7/Whyhz1.png" alt="學員案例1" class="flex-shrink-0 w-full h-auto object-cover">
+                        <img src="https://i.postimg.cc/xjX5NG4S/Whyhz2.png" alt="學員案例2" class="flex-shrink-0 w-full h-auto object-cover">
+                        <img src="https://i.postimg.cc/kMLcQV0R/Whyhz3.png" alt="學員案例3" class="flex-shrink-0 w-full h-auto object-cover">
+                        <img src="https://i.postimg.cc/CLD4mh0P/Whyhz4.png" alt="學員案例4" class="flex-shrink-0 w-full h-auto object-cover">
+                        <img src="https://i.postimg.cc/GmCxfWhc/Whyhz5.png" alt="學員案例5" class="flex-shrink-0 w-full h-auto object-cover">
+                    </div>
+                    <button id="showcase-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow transition z-10">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="showcase-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow transition z-10">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center mt-4 space-x-2" id="showcase-dots">
+                    <button class="w-3 h-3 rounded-full bg-red-500 focus:outline-none transition-colors" onclick="goToShowcase(0)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none transition-colors" onclick="goToShowcase(1)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none transition-colors" onclick="goToShowcase(2)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none transition-colors" onclick="goToShowcase(3)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none transition-colors" onclick="goToShowcase(4)"></button>
+                </div>
+            </div>
+        </section>
 
-        <!-- 名單磁鐵區塊 -->
+<script>
+    // 獨立的輪播函式
+    const showcaseCarouselInner = document.getElementById('showcase-carousel-inner');
+    const showcaseDots = document.querySelectorAll('#showcase-dots button');
+    let currentShowcasePage = 0;
+    const totalShowcasePages = 5; // 總共有兩頁
+
+    function updateShowcaseCarousel() {
+        showcaseCarouselInner.style.transform = `translateX(-${currentShowcasePage * 100}%)`;
+        showcaseDots.forEach((dot, index) => {
+            if (index === currentShowcasePage) {
+                dot.classList.add('bg-red-500');
+                dot.classList.remove('bg-gray-300');
+            } else {
+                dot.classList.add('bg-gray-300');
+                dot.classList.remove('bg-red-500');
+            }
+        });
+    }
+
+    function goToShowcase(pageIndex) {
+        currentShowcasePage = pageIndex;
+        updateShowcaseCarousel();
+    }
+
+    document.getElementById('showcase-prev').onclick = () => {
+        currentShowcasePage = (currentShowcasePage - 1 + totalShowcasePages) % totalShowcasePages;
+        updateShowcaseCarousel();
+    };
+
+    document.getElementById('showcase-next').onclick = () => {
+        currentShowcasePage = (currentShowcasePage + 1) % totalShowcasePages;
+        updateShowcaseCarousel();
+    };
+</script>
+
         <section class="bg-white rounded-3xl p-6 sm:p-10 mb-16 text-center shadow-lg">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                 不想再錯過任何機會？
             </h2>
             <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-                留下你的電子信箱，我們將定期分享最新的房產關鍵資訊與實用工具，助你在「富一代」的旅程上走得更穩、更快！
+                留下你的電子信箱，我們將定期分享最新的房產關鍵資訊與實用工具，<br>助你在「富一代」的旅程上走得更穩、更快！
             </p>
-            <form action="#" method="POST" class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                <input type="email" name="email" placeholder="請輸入你的電子信箱" class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-300">
-                <button type="submit" class="bg-red-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105 text-lg">
-                    立即訂閱
-                </button>
-            </form>
+            <div class="flex justify-center">
+                <a href="https://forms.gle/3cfzWWBRfptds4NU7" target="_blank" class="bg-red-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition text-lg">
+                    按我填寫信箱
+                </a>
+            </div>
         </section>
 
-        <!-- 產品介紹區塊 -->
         <section class="text-center mb-16 bg-white rounded-3xl p-6 sm:p-10">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
-                成為「富一代」的行動藍圖：『財商買房課程』
+                成為「富一代」的行動藍圖：『財商買房系統』
             </h2>
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
-                <!-- 模組一 -->
-                <div class="bg-gray-100 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
                     <div class="text-red-500 mb-2">
                         <i class="fas fa-chart-line fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組一：客製化財務規劃</h3>
-                    <p class="text-gray-700">
+                    <p class="text-white-700">
                         為你量身打造，從零開始的財富藍圖。解決「不知道從何開始」的困惑。
                     </p>
                 </div>
-                <!-- 模組二 -->
-                <div class="bg-gray-100 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
                     <div class="text-red-500 mb-2">
                         <i class="fas fa-chalkboard-teacher fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組二：頂級課程與實戰活動</h3>
-                    <p class="text-gray-700">
+                    <p class="text-white-700">
                         30堂線上課程＋線下實體看房，將理論與實踐完美結合，讓你真正學會「看懂」房產。
                     </p>
                 </div>
-                <!-- 模組三 -->
-                <div class="bg-gray-100 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
                     <div class="text-red-500 mb-2">
                         <i class="fas fa-users fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組三：教練陪跑群組</h3>
-                    <p class="text-gray-700">
+                    <p class="text-white-700">
                         加入「火種聯合會」，與志同道合的夥伴一同成長。你的每一步，都有教練與社群的支持。
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 行動呼籲 CTA 區塊 -->
         <section id="cta" class="bg-red-600 text-white rounded-3xl p-6 sm:p-10 text-center shadow-lg">
             <h2 class="text-2xl sm:text-4xl font-bold mb-4">
-                不要再讓藉口，不顧父母，不顧家族的未來了！
+                不要再讓工作忙碌成為藉口，不顧父母，不顧家族的未來了！
             </h2>
             <p class="text-lg mb-6">
                 我們能否自己站起來，成為家族的守護者，為家族規劃？現在，就是最重要且緊急的預備。
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                <a href="#" class="bg-white text-red-600 font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105 text-lg">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6S5psiWvkGH9j-6IePXedVus-GEYBGKbDVK3QSsSmfEcwIg/viewform?usp=pp_url&entry.220436005=F1" class="bg-white text-red-600 font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105 text-lg">
                     立即報名【家族財富啟程】講座 / 諮詢
                 </a>
             </div>
@@ -216,9 +300,43 @@
             </p>
         </section>
 
+        <section class="bg-white rounded-3xl p-6 sm:p-10 mb-16 shadow-lg text-gray-900">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">好棧專區</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-gray-100 rounded-2xl p-6 shadow">
+                    <h3 class="font-bold text-xl mb-2">活動報名表單</h3>
+                    <p class="mb-2">選擇地區與場次，留下聯絡方式，活動前會寄送提醒信。每位聯盟行銷夥伴可獲得專屬推廣連結，成交即享 <span class="text-red-600 font-bold">價值$6000</span> 豐富好禮。</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6S5psiWvkGH9j-6IePXedVus-GEYBGKbDVK3QSsSmfEcwIg/viewform?usp=pp_url&entry.220436005=F1" target="_blank" class="inline-block bg-red-600 text-white px-6 py-2 rounded-full font-semibold mt-2 hover:bg-red-700 transition">立即報名活動</a>
+                </div>
+                <div class="bg-gray-100 rounded-2xl p-6 shadow">
+                    <h3 class="font-bold text-xl mb-2">推廣大使註冊</h3>
+                    <p class="mb-2">註冊成為推廣大使，獲得專屬推廣連結。邀請他人註冊或成交，享有 <span class="text-red-600 font-bold">價值＄600</span> 好禮兌換。</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_e_L9hwNDUXznaDgmGB1DMGNGQg1vD2LTchKySB03tA8uEg/viewform?usp=pp_url&entry.1442016115=F1" target="_blank" class="inline-block bg-yellow-500 text-white px-6 py-2 rounded-full font-semibold mt-2 hover:bg-yellow-600 transition">註冊推廣大使</a>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-gray-100 rounded-2xl p-6 shadow">
+                    <h3 class="font-bold text-xl mb-2">好棧智慧買房家</h3>
+                    <p class="mb-2">輸入財務資料，獲得專屬買房戰力分析與規劃報告。含債務整合、買房距離計算器。</p>
+                    <a href="https://script.google.com/macros/s/AKfycbynWRCet4eNy3FEaRNxKrxwzDl1EcLQWPdmXlFj35w/dev" target="_blank" class="inline-block bg-emerald-600 text-white px-6 py-2 rounded-full font-semibold mt-2 hover:bg-emerald-700 transition">立即體驗分析</a>
+                    <p class="text-xs mt-2 text-gray-500">*下載報告前需同意資料使用</p>
+                </div>
+                <div class="bg-gray-100 rounded-2xl p-6 shadow">
+                    <h3 class="font-bold text-xl mb-2">火種聯合會社群</h3>
+                    <p class="mb-2">官方Line@＆社群，不定期直播分享、抽獎與好康資訊。</p>
+                    <a href="https://lin.ee/ba4sfMB" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full font-semibold mt-2 hover:bg-green-700 transition">加入官方Line@</a>
+                    <div class="flex justify-center mt-4">
+                        <img src="https://i.meee.com.tw/sDsoY7q.png" alt="Line@ QR Code" class="h-24 w-auto rounded shadow">
+                    </div>
+                    <p class="text-xs mt-2 text-gray-500">或搜尋 @814zfyeu</p>
+                </div>
+            </div>
+            
+            
+        </section>
+
     </main>
 
-    <!-- 頁腳 -->
     <footer class="bg-gray-900 text-white py-8 mt-16">
         <div class="container mx-auto text-center px-4">
             <div class="flex justify-center mb-4">
@@ -228,14 +346,14 @@
                 F¹ • Lab (富一代實驗室) | 你的世代財富共創與守護領航平台
             </p>
             <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-red-400 transition duration-300">
+                <a href=" https://lin.ee/ba4sfMB" class="hover:text-red-400 transition duration-300">
                     <i class="fab fa-line fa-2x"></i>
                 </a>
-                <a href="#" class="hover:text-red-400 transition duration-300">
+                <a href="https://www.instagram.com/f1_lab.inc/" class="hover:text-red-400 transition duration-300">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
-                <a href="#" class="hover:text-red-400 transition duration-300">
-                    <i class="fab fa-twitter fa-2x"></i>
+                <a href="https://www.threads.com/@f1_lab.inc?xmt=AQF0xUq2tAztXLHmVw7LIaJ8n1ci1OqUYrkeswC9r770gqM" class="hover:text-red-400 transition duration-300">
+                    <i class="fab fa-threads fa-2x"></i>
                 </a>
             </div>
             <p class="text-sm text-gray-500">
@@ -246,3 +364,97 @@
 
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('#carousel-inner img');
+    const inner = document.getElementById('carousel-inner');
+    const prev = document.getElementById('carousel-prev');
+    const next = document.getElementById('carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const numImages = images.length;
+
+    // 設定每張圖片寬度
+    images.forEach(img => img.style.width = (100 / (numImages + 2)) + '%');
+
+    // 複製第一張和最後一張圖片
+    const firstClone = images[0].cloneNode(true);
+    const lastClone = images[numImages - 1].cloneNode(true);
+    firstClone.style.width = lastClone.style.width = (100 / (numImages + 2)) + '%';
+    inner.appendChild(firstClone);
+    inner.prepend(lastClone);
+
+    // 設定容器寬度
+    inner.style.width = `${(numImages + 2) * 100}%`;
+
+    let current = 1;
+    let timer = null;
+    let isTransitioning = false;
+
+    // 調整初始位置
+    inner.style.transition = 'none';
+    inner.style.transform = `translateX(-${current * (100 / (numImages + 2))}%)`;
+
+    // 產生指示點
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < numImages; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'w-3 h-3 rounded-full bg-gray-300 focus:outline-none';
+        if (i === 0) dot.classList.add('bg-red-500');
+        dot.addEventListener('click', () => goTo(i + 1));
+        dotsContainer.appendChild(dot);
+    }
+    const dots = dotsContainer.querySelectorAll('button');
+
+    function updateDots(index) {
+        dots.forEach((d, i) => d.className = 'w-3 h-3 rounded-full bg-gray-300' + (i === index ? ' bg-red-500' : ''));
+    }
+
+    function goTo(idx, smooth = true) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        inner.style.transition = smooth ? 'transform 0.5s ease-in-out' : 'none';
+        inner.style.transform = `translateX(-${idx * (100 / (numImages + 2))}%)`;
+        current = idx;
+        resetTimer();
+    }
+
+    prev.onclick = () => goTo(current - 1);
+    next.onclick = () => goTo(current + 1);
+
+    inner.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        if (current === 0) {
+            inner.style.transition = 'none';
+            current = numImages;
+            inner.style.transform = `translateX(-${current * (100 / (numImages + 2))}%)`;
+        } else if (current === numImages + 1) {
+            inner.style.transition = 'none';
+            current = 1;
+            inner.style.transform = `translateX(-${current * (100 / (numImages + 2))}%)`;
+        }
+        updateDots(current - 1);
+    });
+
+    function autoPlay() {
+        timer = setInterval(() => {
+            goTo(current + 1);
+        }, 10000);
+    }
+    function resetTimer() {
+        clearInterval(timer);
+        autoPlay();
+    }
+    autoPlay();
+
+    // 滑動支援
+    let startX = null;
+    inner.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    inner.addEventListener('touchend', e => {
+        if (startX === null || isTransitioning) return;
+        let endX = e.changedTouches[0].clientX;
+        if (endX - startX > 50) goTo(current - 1);
+        else if (startX - endX > 50) goTo(current + 1);
+        startX = null;
+    });
+});
+</script>
