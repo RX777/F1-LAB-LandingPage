@@ -13,12 +13,43 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* 根據您的圖片風格，設定深綠色漸層背景 */
             background: linear-gradient(to bottom, #0c4d44, #001f1c);
         }
         h1 {
-        line-height: 2; /* 您可以將此數值改為您想要的行高 */
-    }
+            line-height: 2;
+        }
+
+       /* ------------------- 懸停效果的 CSS ------------------- */
+
+/* 容器：確保圖片放大時不會溢出邊界，同時保留圓角和陰影 */
+.image-hover-container {
+    overflow: hidden;
+    border-radius: 1.5rem; /* 保持 rounded-3xl 的圓角 */
+    /* 為陰影效果添加過渡，讓它在懸停時平滑改變 */
+    transition: box-shadow 0.4s ease-in-out;
+    /* 保持 shadow-lg 的初始陰影樣式 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+}
+
+/* 圖片本身：為所有過渡效果設定一個平滑的動畫時間 */
+.image-hover-container img {
+    /* 同時對 transform (放大) 和 opacity (透明度) 設定過渡效果 */
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; 
+}
+
+/* 滑鼠懸停時：放大圖片並使其半透明，同時增加陰影效果 */
+.image-hover-container:hover img {
+    transform: scale(1.05); /* 放大 5% */
+    opacity: 0.6; /* 設定為 60% 不透明，你可以調整這個數值 */
+}
+
+/* 額外為容器設定懸停時的陰影，讓它看起來更立體 */
+.image-hover-container:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.08); /* 陰影變得更深、更突出 */
+}
+
+/* ---------------------------------------------------- */
+
     </style>
 </head>
 <body class="text-white">
@@ -37,14 +68,13 @@
         <section class="flex flex-col lg:flex-row items-center lg:space-x-8 mb-16 pt-12">
             <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 flex flex-col gap-y-2">
-    <span>
-        「家族的<span class="text-yellow-600">匱乏</span>到我為止
-    </span>
-    <span class="pl-14">
-           家族的<span class="text-orange-500">富庶</span>從我開始」
-    </span>
-</h1>
-
+                    <span>
+                        「家族的<span class="text-yellow-600">匱乏</span>到我為止
+                    </span>
+                    <span class="pl-14">
+                        家族的<span class="text-orange-500">富庶</span>從我開始」
+                    </span>
+                </h1>
                 <p class="text-lg sm:text-xl text-gray-300 mb-6">
                     F¹ • Lab帶你迎頭超越富二代的車尾燈
                 </p>
@@ -55,22 +85,20 @@
                 </div>
             </div>
             <div class="lg:w-1/2 relative flex flex-col items-center">
-                <!-- ...existing code... -->
-<div id="hero-carousel" class="overflow-hidden rounded-3xl shadow-xl w-full max-w-[1000px] aspect-square">
-    <div class="flex transition-transform duration-500" id="carousel-inner" style="transform: translateX(0);">
-        <img src="https://i.postimg.cc/zDPxB2DN/25-2.png" alt="品牌介紹1" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/vZr66Dyy/F1-2.png" alt="品牌介紹2" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/52dC0LZp/F1-3.png" alt="品牌介紹3" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/mrT13RZH/F1-4.png" alt="品牌介紹4" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/nzzs5kDV/F1-5.png" alt="品牌介紹5" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/qBGJnnhj/F1-6.png" alt="品牌介紹6" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/288zx6nm/F1-7.png" alt="品牌介紹7" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/tCS9vjz6/F1-8.png" alt="品牌介紹8" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/bJBGjtxx/F1-6.png" alt="品牌介紹9" class="h-full object-cover flex-shrink-0">
-        <img src="https://i.postimg.cc/7hJ5PZ9p/F1-7.png" alt="品牌介紹10" class="h-full object-cover flex-shrink-0">
-    </div>
-</div>
-<!-- ...existing code... -->
+                <div id="hero-carousel" class="overflow-hidden rounded-3xl shadow-xl w-full max-w-[1000px] aspect-square">
+                    <div class="flex transition-transform duration-500" id="carousel-inner" style="transform: translateX(0);">
+                        <img src="https://i.postimg.cc/zDPxB2DN/25-2.png" alt="品牌介紹1" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/vZr66Dyy/F1-2.png" alt="品牌介紹2" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/52dC0LZp/F1-3.png" alt="品牌介紹3" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/mrT13RZH/F1-4.png" alt="品牌介紹4" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/nzzs5kDV/F1-5.png" alt="品牌介紹5" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/qBGJnnhj/F1-6.png" alt="品牌介紹6" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/288zx6nm/F1-7.png" alt="品牌介紹7" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/tCS9vjz6/F1-8.png" alt="品牌介紹8" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/bJBGjtxx/F1-6.png" alt="品牌介紹9" class="h-full object-cover flex-shrink-0">
+                        <img src="https://i.postimg.cc/7hJ5PZ9p/F1-7.png" alt="品牌介紹10" class="h-full object-cover flex-shrink-0">
+                    </div>
+                </div>
                 <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 rounded-full p-2 shadow transition" style="z-index:2;">
                     <i class="fas fa-chevron-left"></i>
                 </button>
@@ -78,7 +106,7 @@
                     <i class="fas fa-chevron-right"></i>
                 </button>
                 <div class="flex justify-center mt-4 space-x-2 w-full max-w-[840px]" id="carousel-dots">
-                    </div>
+                </div>
             </div>
         </section>
 
@@ -86,11 +114,11 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">
                     <span>
-        你好！我是Ryan
-    </span>
-    <span class="pl-10">
-          F¹ • Lab的創辦人
-    </span>
+                        你好！我是Ryan
+                    </span>
+                    <span class="pl-10">
+                        F¹ • Lab的創辦人
+                    </span>
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-700">
                     <div>
@@ -145,7 +173,7 @@
             </div>
         </section>
 
-        <section class="bg-white rounded-3xl shadow-lg p-6 sm:p-10 mb-16 text-center">
+        <section class="bg-white rounded-3xl shadow-lg p-6 sm:p-10 mb-16">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
                     這套智慧，來自於誰？
@@ -168,7 +196,8 @@
                 </div>
             </div>
         </section>
-   <section class="bg-emerald-750 rounded-3xl shadow-lg p-6 sm:p-10 mb-10 text-center">
+
+        <section class="bg-emerald-750 rounded-3xl shadow-lg p-6 sm:p-10 mb-10 text-center">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
                     
@@ -198,41 +227,41 @@
             </div>
         </section>
 
-<script>
-    // 獨立的輪播函式
-    const showcaseCarouselInner = document.getElementById('showcase-carousel-inner');
-    const showcaseDots = document.querySelectorAll('#showcase-dots button');
-    let currentShowcasePage = 0;
-    const totalShowcasePages = 5; // 總共有兩頁
+        <script>
+            // 獨立的輪播函式
+            const showcaseCarouselInner = document.getElementById('showcase-carousel-inner');
+            const showcaseDots = document.querySelectorAll('#showcase-dots button');
+            let currentShowcasePage = 0;
+            const totalShowcasePages = 5; // 總共有兩頁
 
-    function updateShowcaseCarousel() {
-        showcaseCarouselInner.style.transform = `translateX(-${currentShowcasePage * 100}%)`;
-        showcaseDots.forEach((dot, index) => {
-            if (index === currentShowcasePage) {
-                dot.classList.add('bg-red-500');
-                dot.classList.remove('bg-gray-300');
-            } else {
-                dot.classList.add('bg-gray-300');
-                dot.classList.remove('bg-red-500');
+            function updateShowcaseCarousel() {
+                showcaseCarouselInner.style.transform = `translateX(-${currentShowcasePage * 100}%)`;
+                showcaseDots.forEach((dot, index) => {
+                    if (index === currentShowcasePage) {
+                        dot.classList.add('bg-red-500');
+                        dot.classList.remove('bg-gray-300');
+                    } else {
+                        dot.classList.add('bg-gray-300');
+                        dot.classList.remove('bg-red-500');
+                    }
+                });
             }
-        });
-    }
 
-    function goToShowcase(pageIndex) {
-        currentShowcasePage = pageIndex;
-        updateShowcaseCarousel();
-    }
+            function goToShowcase(pageIndex) {
+                currentShowcasePage = pageIndex;
+                updateShowcaseCarousel();
+            }
 
-    document.getElementById('showcase-prev').onclick = () => {
-        currentShowcasePage = (currentShowcasePage - 1 + totalShowcasePages) % totalShowcasePages;
-        updateShowcaseCarousel();
-    };
+            document.getElementById('showcase-prev').onclick = () => {
+                currentShowcasePage = (currentShowcasePage - 1 + totalShowcasePages) % totalShowcasePages;
+                updateShowcaseCarousel();
+            };
 
-    document.getElementById('showcase-next').onclick = () => {
-        currentShowcasePage = (currentShowcasePage + 1) % totalShowcasePages;
-        updateShowcaseCarousel();
-    };
-</script>
+            document.getElementById('showcase-next').onclick = () => {
+                currentShowcasePage = (currentShowcasePage + 1) % totalShowcasePages;
+                updateShowcaseCarousel();
+            };
+        </script>
 
         <section class="bg-white rounded-3xl p-6 sm:p-10 mb-16 text-center shadow-lg">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
@@ -248,13 +277,23 @@
             </div>
         </section>
 
+        <section class="bg-white rounded-3xl p-0 sm:p-0 mb-0 shadow-lg text-gray-900">
+            <div class="flex justify-center">
+                <div class="image-hover-container w-full">
+                    <a href="https://forms.gle/3cfzWWBRfptds4NU7" target="_blank" class="block w-full h-full">
+                        <img src="https://i.meee.com.tw/yKjm5aJ.png" alt="學員邀請卡" class="w-full h-auto object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section class="text-center mb-16 bg-white rounded-3xl p-6 sm:p-10">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
                 成為「富一代」的行動藍圖：『財商買房系統』
             </h2>
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
-                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
-                    <div class="text-red-500 mb-2">
+                <div class="bg-[#50C878] p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-white mb-2">
                         <i class="fas fa-chart-line fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組一：客製化財務規劃</h3>
@@ -262,8 +301,8 @@
                         為你量身打造，從零開始的財富藍圖。解決「不知道從何開始」的困惑。
                     </p>
                 </div>
-                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
-                    <div class="text-red-500 mb-2">
+                <div class="bg-[#00A86B] p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-white mb-2">
                         <i class="fas fa-chalkboard-teacher fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組二：頂級課程與實戰活動</h3>
@@ -271,8 +310,8 @@
                         30堂線上課程＋線下實體看房，將理論與實踐完美結合，讓你真正學會「看懂」房產。
                     </p>
                 </div>
-                <div class="bg-stone-500 p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
-                    <div class="text-red-500 mb-2">
+                <div class="bg-[#008060] p-6 rounded-3xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-white mb-2">
                         <i class="fas fa-users fa-3x"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-2">模組三：教練陪跑群組</h3>
@@ -331,10 +370,7 @@
                     <p class="text-xs mt-2 text-gray-500">或搜尋 @814zfyeu</p>
                 </div>
             </div>
-            
-            
         </section>
-
     </main>
 
     <footer class="bg-gray-900 text-white py-8 mt-16">
@@ -361,10 +397,11 @@
             </p>
         </div>
     </footer>
-
 </body>
 </html>
+
 <script>
+// 輪播腳本... (這部分沒有修改，保留原樣)
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('#carousel-inner img');
     const inner = document.getElementById('carousel-inner');
@@ -458,4 +495,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
